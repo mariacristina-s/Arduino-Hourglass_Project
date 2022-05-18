@@ -9,7 +9,9 @@ Ansamblul de componente este format din:
 - plăcuță Arduino UNO,
 - senzor giroscopic și accelerometru ADXL335 cu 3 axe,
 - 2 matrici LED MAX7219 de 8x8,
-- cablurile folosite pentru legarea componentelor,
+- cablurile folosite pentru legarea componentelor.
+
+Pentru rularea și încărcarea codului pe plăcuță, este necesară crearea unui fișier numit ”hourglass”, care să conțină: hourglass.ino, Delay.h, Delay.cpp, LedControl.h, LedControl.cpp.
 
 # Modulul cu accelerometrul ADXL335
 Accelerometrul este un echipament/o piesă/un senzor, care oferă 
