@@ -1,5 +1,5 @@
 # Arduino-Hourglass_Project
-Sima Maria-Cristina, grupa 331AB
+Sima Maria-Cristina, grupa 331AB - 
 Proiect la Sisteme cu Microprocesoare
 
 # Introducere
@@ -32,6 +32,17 @@ cu accelerația de-a lungul celor 3 axe.
 # Schema circuitului
 ![image](https://user-images.githubusercontent.com/100774960/168489196-13d4d977-99e6-4134-ab10-f30e747bb60b.png)
 
-
-
+# Descriere
+Circuitul funcționează pentru a simula funcționarea unei clepsidre. ”Particulele” (elementele matricelor de 8x8)
+care țin locul nisipului unei clepsidre obișnuite vor cădea una câte una, pe rând, dintr-o matrice în alta, în 
+funcție de înclinația și de direcția în care se află ansamblul. Particulele din matrici cad cu un delay (destul de) 
+mic, pentru a ”imita” funcționarea realistă a unei clepsidre. Particulele trebuie să se mute pe display-ul 
+matricii în funcție de direcția în care trebuie să meargă:
+- în jos, linia va scădea, iar coloana va crește (x = x-1, y = y+1)
+- în stânga, linia va scădea, iar coloana va rămâne la fel (x = x-1)
+- în dreapta, coloana va crește, iar linia va rămâne la fel (y = y+1).
+Înainte ca fiecare particulă să ”cadă”, se va verifica poziția care nu este deja ocupată de altă particulă, cu 
+ajutorul a 3 funcții (canGoLeft, canGoRight și canGoDown). Dacă locația respectivă este liberă, particula se ”va
+muta” acolo. Citirea de la senzorul accelerometru este dată de funcția getGravity(), care citește coordonatele
+x și y pentru a determina înclinarea. Luminozitatea matricilor LED este minimă (dar se poate modifica din cod).
 
