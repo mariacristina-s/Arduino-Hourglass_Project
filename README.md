@@ -9,6 +9,7 @@ Ansamblul de componente este format din:
 - plăcuță Arduino UNO,
 - senzor giroscopic și accelerometru ADXL335 cu 3 axe,
 - 2 matrici LED MAX7219 de 8x8,
+- breadboard,
 - cablurile folosite pentru legarea componentelor.
 
 Pentru rularea și încărcarea codului pe plăcuță, este necesară crearea unui fișier numit ”hourglass”, care să conțină: hourglass.ino, Delay.h, Delay.cpp, LedControl.h, LedControl.cpp.
@@ -35,6 +36,9 @@ de-a lungul axelor X, Y și Z, și oferă output analog proporțional cu acceler
 # Schema circuitului
 ![image](https://user-images.githubusercontent.com/100774960/168489196-13d4d977-99e6-4134-ab10-f30e747bb60b.png)
 
+# Montaj
+![image](https://user-images.githubusercontent.com/100774960/169130021-b47d7028-e041-471b-8c78-dff1b51acb50.png)
+
 # Descriere
 Circuitul funcționează pentru a simula funcționarea unei clepsidre. ”Particulele” (elementele matricelor de 8x8),
 care țin locul nisipului unei clepsidre obișnuite, vor cădea una câte una, pe rând, dintr-o matrice în alta, în 
@@ -49,6 +53,4 @@ matricii în funcție de direcția în care trebuie să meargă:
 ajutorul a 3 funcții (canGoLeft, canGoRight și canGoDown). Dacă locația respectivă este liberă, particula se ”va
 muta” acolo. Citirea de la senzorul accelerometru este dată de funcția getGravity(), care citește coordonatele
 x și y pentru a determina înclinarea. Luminozitatea matricilor LED este minimă (dar și aceasta se poate modifica din cod).
-
-# Direcții de dezvoltare
-Pentru un proiect mai amplu, s-ar putea adăuga și o alarmă, care să anunțe utilizatorul când timpul s-a scurs, sau un display, pe care să se afișeze câte secunde mai sunt până timpul se scurge.
+până timpul se scurge.
