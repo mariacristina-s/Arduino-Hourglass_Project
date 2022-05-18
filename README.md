@@ -44,6 +44,7 @@ matricii în funcție de direcția în care trebuie să meargă:
 - în jos, linia va scădea, iar coloana va crește (x = x-1, y = y+1)
 - în stânga, linia va scădea, iar coloana va rămâne la fel (x = x-1)
 - în dreapta, coloana va crește, iar linia va rămâne la fel (y = y+1).
+
 Înainte ca fiecare particulă să ”cadă”, se va verifica poziția care nu este deja ocupată de altă particulă, cu 
 ajutorul a 3 funcții (canGoLeft, canGoRight și canGoDown). Dacă locația respectivă este liberă, particula se ”va
 muta” acolo. Citirea de la senzorul accelerometru este dată de funcția getGravity(), care citește coordonatele
